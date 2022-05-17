@@ -1,0 +1,109 @@
+/*colores*/
+/*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.intro {
+  text-align: center;
+}
+
+main {
+  padding: 30px;
+}
+
+/*colores*/
+/*Font*/
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html h1, html h3 {
+    font-size: 25px;
+  }
+  html h4, html h5, html h6, html p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html h1, html h3 {
+    font-size: 20px;
+  }
+  html h4, html h5, html h6, html p {
+    font-size: 18px;
+  }
+}
+
+body {
+  background: rgb(231, 251, 190);
+  background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
+}
+
+.tittle {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+  font-size: 40px;
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  .tittle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tittle {
+    font-size: 30px;
+  }
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: violet;
+  color: whitesmoke;
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  footer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  .contacto_text {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacto_text {
+    display: none;
+  }
+}
+
+.div-footer {
+  padding-top: 10vh;
+}
+
+.nav-button:hover {
+  background: floralwhite;
+  border: solid 1px papayawhip;
+}
+
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  .menu {
+    background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu {
+    background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
