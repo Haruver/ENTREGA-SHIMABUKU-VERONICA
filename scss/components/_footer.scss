@@ -4,7 +4,6 @@
 @import '../bases/mapas';
 @import '../bases/extend';
 
-/*--------------------------*/
 
 footer{
     height: map-get($footer, height);
@@ -31,11 +30,6 @@ footer{
         @include mobile{
             display: none;
         }
-    } /*----------------*/
-    @include mobile{
-    }
+    }  
 }
 
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

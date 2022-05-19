@@ -84,7 +84,6 @@ main {
   align-items: flex-start;
 }
 
-/*--------------------------*/
 footer {
   height: 40vh;
   position: relative;
@@ -95,7 +94,6 @@ footer {
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  /*----------------*/
 }
 @media screen and (max-width: 450px) {
   footer .footer-txt h3, footer .footer-txt h5, footer .footer-txt h6 {
@@ -112,7 +110,7 @@ footer {
     display: none;
   }
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 /*Font-size*/
 /*Font*/
 /*colores*/
