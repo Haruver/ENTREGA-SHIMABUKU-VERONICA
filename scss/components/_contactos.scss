@@ -1,0 +1,15 @@
+@import '../bases/generales';
+@import '../bases/listas';
+@import '../bases/media';
+@import '../bases/mapas';
+@import '../bases/extend';
+
+
+.redes{
+    @extend %flex;
+    @include mobile{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+}

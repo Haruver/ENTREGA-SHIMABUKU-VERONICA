@@ -1,0 +1,41 @@
+@import '../bases/generales';
+@import '../bases/listas';
+@import '../bases/media';
+@import '../bases/mapas';
+@import '../bases/extend';
+
+/*--------------------------*/
+
+footer{
+    height: map-get($footer, height);
+    position: relative;
+    bottom: 0;
+    margin: map-get($footer, margin);
+    padding: map-get($footer, padding);
+    background-color: map-get($footer, bg-footer );
+    color: map-get($footer, txt-color);
+    font-family: map-get($footer, font);
+    text-align: center;
+   
+    .footer-txt{
+        @include mobile{
+            h3, h5, h6{
+                font-size: nth($font-size, 6);
+            }
+        }
+    }
+    .contacto_text{
+        @include tablet{
+            display: none;
+        }
+        @include mobile{
+            display: none;
+        }
+    } /*----------------*/
+    @include mobile{
+    }
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

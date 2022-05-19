@@ -1,8 +1,30 @@
-
+/*Font-size*/
 
 $font-size:
 40px,
 30px,
 25px,
 20px,
-18px;
+18px,
+12px;
+
+/*Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap');
+
+$font-tex: 'Roboto', sans-serif;
+$nav-font: "Luckiest Guy", cursive;
+$font-bold: 700;
+$font-regular: 400;
+$font-thin: 100;
+
+
+
+/*colores*/
+$bg: rgb(231,251,190);
+$bg-color-1: radial-gradient(circle, rgba(231,251,190,1) 23%, rgba(248,228,240,1) 65%);
+$bg-color-2: linear-gradient(360deg, rgba(231,251,190,1) 23%, rgba(250,175,220,1) 65%);
+$bg-color-footer: violet;
+$color-text-light: whitesmoke;
+$color-text-dark: black;
