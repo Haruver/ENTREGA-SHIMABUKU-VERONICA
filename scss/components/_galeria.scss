@@ -4,9 +4,8 @@
 @import '../bases/extend';
 
 
-.div-img{
-    
-    
+
+.div-img{ 
     @include mobile{   
        .imagenes {
             position: relative;

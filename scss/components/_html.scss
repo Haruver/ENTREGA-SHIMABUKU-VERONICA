@@ -39,6 +39,7 @@ html{
     }
     main{
         .intro{
+            
             @include mobile{
             height: 150px;
             margin: 20px auto auto auto;
