@@ -1,0 +1,176 @@
+@import '../bases/generales';
+@import '../bases/listas';
+@import '../bases/media';
+@import '../bases/extend';
+
+html{
+    margin: 2px;
+    body{
+        background:$bg;
+        background:$bg-color-1;
+        height: 100vh;
+        padding: 5px;
+            @include mobile{
+                height: 50rem;
+                }
+
+        header{
+            .tittle{
+                font-family: $nav-font;
+                font-weight: $font-thin;
+                font-size: nth($font-size, 1);
+                    @include tablet{
+                        font-size: nth($font-size, 3);
+                    }
+                    @include mobile{
+                        font-size: nth($font-size, 2);
+                    }
+            }
+            .menu{
+                @include tablet{
+                    background: $bg-color-1;
+                }
+                @include mobile{
+                    background: $bg-color-1;
+                }
+            }
+        }
+    }
+    .main_index{
+        .caja-texto{
+            background: white; 
+            display: flex;
+            justify-content: center;
+            border-radius: 40px;
+        }
+        .imagenes{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 220px;
+            z-index: 2;
+            @include mobile{ 
+                margin-top: 20px;
+            }
+        }
+        .texto{ 
+            @include mobile{ 
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+        .txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            margin-left: -80px;
+            z-index: 3;
+        }  
+        .img{
+            display: flex;
+            justify-content: center;
+          
+        } 
+        
+        .img_nos{ 
+            width: 25vw;
+            z-index: 2;
+            position: relative;
+            border-radius: 70%;
+            top: 46px;
+            }
+        
+        .img_serv{
+            position: relative;
+            z-index: 2;
+            border-radius: 70%;
+            width: 25vw;
+            top: -145px;
+            background-color: white; 
+            @include mobile{
+                top: 0;
+            }
+        }
+        .img{
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        .img:hover {
+            opacity: .75;
+            transform: scale(1);
+        }
+        .servicios{
+            position: relative;
+        }
+        .img_volun{
+            width: 25vw;
+            z-index: 2;
+            position: relative;
+            border-radius: 70%;          
+            top: 46px;  
+        }
+        
+        .img_adopcion{
+            width: 45vw;
+            z-index: 2;
+            position: relative;
+            border-radius: 70%;   
+            top: -80px;
+            @include mobile{
+                top: 20px;
+            }         
+        }
+      /*  .paw1{
+            position: relative;
+            z-index: -1;
+            width: 7%;
+            animation: walk 7s steps(7, end) infinite;
+              @keyframes walk {
+                to {
+                  transform: translateY(-500px);
+                }
+              }
+        }
+        .paw2{
+            position: relative;
+            z-index: -1;
+            width: 7%;
+            animation: walk 7s steps(5, end) infinite;
+              @keyframes walk {
+                to {
+                  transform: translateY(-500px);
+                }
+              }
+        }
+        */
+        .intro{  
+            @include mobile{
+            height: 150px;
+            margin: 20px auto auto auto;
+           }
+        } 
+    }
+
+    @include tablet{
+        h1, h3{
+            font-size: nth($font-size, 3);
+        }
+        h4, h5, h6, p{
+            font-size: nth($font-size, 4 );
+        }
+    }
+    @include mobile{
+        h1, h3{
+            font-size: nth($font-size, 4);
+        }
+        h4, h5, h6, p{
+            font-size: nth($font-size, 5 );
+        }
+    }
+
+}
+
+
+ 
+
+
+ 

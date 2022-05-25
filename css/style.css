@@ -77,27 +77,38 @@ main {
 /*Font-size*/
 /*Font*/
 /*colores*/
-.redes {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-start;
-}
-
 footer {
-  height: 40vh;
+  height: 25vh;
   position: relative;
   bottom: 0;
-  margin: 18px auto 10px auto;
-  padding: 0 0 0 50px;
   background-color: violet;
   color: whitesmoke;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
+}
+footer .div-footer {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+footer .contacto {
+  z-index: 2;
+  display: flex;
+  justify-content: end;
+  margin: -30px 11px;
+}
+footer .footer-txt {
+  margin: 5px;
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  footer .footer-txt h3, footer .footer-txt h5, footer .footer-txt h6 {
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
 @media screen and (max-width: 450px) {
   footer .footer-txt h3, footer .footer-txt h5, footer .footer-txt h6 {
     font-size: 12px;
+    font-weight: 700;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
@@ -139,13 +150,6 @@ main {
 /*Font-size*/
 /*Font*/
 /*colores*/
-.redes {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-start;
-}
-
 @media screen and (max-width: 450px) {
   .div-img .imagenes {
     position: relative;
@@ -224,16 +228,8 @@ main {
 /*Font-size*/
 /*Font*/
 /*colores*/
-.redes {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-start;
-}
-
 html {
   margin: 2px;
-  padding: 2px;
 }
 html body {
   background: rgb(231, 251, 190);
@@ -271,8 +267,117 @@ html body header .tittle {
     background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
   }
 }
+html .main_index {
+  /*  .paw1{
+        position: relative;
+        z-index: -1;
+        width: 7%;
+        animation: walk 7s steps(7, end) infinite;
+          @keyframes walk {
+            to {
+              transform: translateY(-500px);
+            }
+          }
+    }
+    .paw2{
+        position: relative;
+        z-index: -1;
+        width: 7%;
+        animation: walk 7s steps(5, end) infinite;
+          @keyframes walk {
+            to {
+              transform: translateY(-500px);
+            }
+          }
+    }
+    */
+}
+html .main_index .caja-texto {
+  background: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+}
+html .main_index .imagenes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 220px;
+  z-index: 2;
+}
 @media screen and (max-width: 450px) {
-  html main .intro {
+  html .main_index .imagenes {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html .main_index .texto {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+html .main_index .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -80px;
+  z-index: 3;
+}
+html .main_index .img {
+  display: flex;
+  justify-content: center;
+}
+html .main_index .img_nos {
+  width: 25vw;
+  z-index: 2;
+  position: relative;
+  border-radius: 70%;
+  top: 46px;
+}
+html .main_index .img_serv {
+  position: relative;
+  z-index: 2;
+  border-radius: 70%;
+  width: 25vw;
+  top: -145px;
+  background-color: white;
+}
+@media screen and (max-width: 450px) {
+  html .main_index .img_serv {
+    top: 0;
+  }
+}
+html .main_index .img {
+  transition-property: all;
+  transition-duration: 2s;
+}
+html .main_index .img:hover {
+  opacity: 0.75;
+  transform: scale(1);
+}
+html .main_index .servicios {
+  position: relative;
+}
+html .main_index .img_volun {
+  width: 25vw;
+  z-index: 2;
+  position: relative;
+  border-radius: 70%;
+  top: 46px;
+}
+html .main_index .img_adopcion {
+  width: 45vw;
+  z-index: 2;
+  position: relative;
+  border-radius: 70%;
+  top: -80px;
+}
+@media screen and (max-width: 450px) {
+  html .main_index .img_adopcion {
+    top: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html .main_index .intro {
     height: 150px;
     margin: 20px auto auto auto;
   }
@@ -292,13 +397,6 @@ html body header .tittle {
   html h4, html h5, html h6, html p {
     font-size: 18px;
   }
-}
-
-.redes {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-start;
 }
 
 /*Font-size*/
@@ -329,19 +427,22 @@ main {
 /*Font-size*/
 /*Font*/
 /*colores*/
-.redes {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-start;
-}
-
 @media screen and (max-width: 450px) {
   .redes {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+
+textarea {
+  height: 20vh;
+  width: 47vw;
+  margin: 0px 10px;
+}
+
+.map {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

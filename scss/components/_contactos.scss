@@ -5,11 +5,20 @@
 @import '../bases/extend';
 
 
-.redes{
-    @extend %flex;
+.redes{ 
     @include mobile{
         display: flex;
         flex-direction: column;  
         align-items: center;
     }
+}
+textarea{
+
+    height: 20vh;
+    width: 47vw;
+    margin: 0px 10px;
+}
+.map
+{
+    width: 50%;
 }
