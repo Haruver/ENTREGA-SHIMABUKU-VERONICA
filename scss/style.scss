@@ -1,9 +1,11 @@
 @import './bases/generales';
 @import './bases/listas';
 @import './bases/media';
-@import 'components/footer';
 @import './bases/mapas';
+@import './bases/extend'; 
+
+
+@import 'components/footer';
 @import 'components/galeria';
 @import 'components/inicio';
-@import './bases/extend';
 @import 'components/contactos';

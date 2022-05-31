@@ -1,24 +1,56 @@
-@import '../bases/generales';
-@import '../bases/listas';
-@import '../bases/media';
-@import '../bases/mapas';
-@import '../bases/extend';
-
 
 .redes{ 
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
     @include mobile{
         display: flex;
         flex-direction: column;  
         align-items: center;
     }
 }
-textarea{
-
-    height: 20vh;
-    width: 47vw;
-    margin: 0px 10px;
+ 
+ 
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: solid 2px $color-1;
+  margin-top: 4px;
+  margin-bottom: 16px;
 }
-.map
-{
-    width: 50%;
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: solid 2px $color-2;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.mapa, .column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.contacto-c{
+    @extend %flex;
+    align-items: flex-end;
+    gap: 15px;
+} 
+
+.row{
+  @include mobile{
+    form{
+      width: 220%;
+    }
+    .mapa{ 
+      position: relative; 
+      width: 100%;
+    }
+
+  }
 }

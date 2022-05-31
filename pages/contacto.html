@@ -88,67 +88,101 @@
     </header>
 
     <main>
-        <section class="section_contacto">
-            <h1 class="subtitulo animate__animated animate__pulse">Contacto</h1>
-            <hr>
-        
-           <div class="row">
-            <div class="mb-3 col-lg-6 col-sm-12">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <section class="section-contacto"> 
+          <h1 class="subtitulo animate__animated animate__pulse">Contacto</h1>
+          <hr>
+            <div class="row">
+              <div class="column">
+                <form>
+                  <label for="name">Nombre</label>
+                  <input type="text" id="name" name="nombre" placeholder="Tu nombre">
+                  
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                 
+                  <label for="menssage">Mensaje</label>
+                  <textarea id="subject" name="subject" placeholder="Tu Mensaje" style="height:170px"></textarea>
+                  <input type="submit" value="Enviar">
+                </form>
               </div>
               
-              <div class=" row ">
-                <div class="mb-3 col-lg-6 col-sm-12">
-                  <label for="exampleFormControlTextarea1" class="form-label ">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  ></textarea>
-                </div>
+              <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8927803279016!2d-58.46119668502698!3d-34.60687266517149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca03a3ed15cb%3A0xd447f87aa69124cb!2sDr.%20Luis%20Bel%C3%A1ustegui%201340%2C%20C1416CXR%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1653945915200!5m2!1ses-419!2sus" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                <div class="tel d-flex justify-content-center ">
+                  <ul>
+                      <li>Teléfono:(011) 4598-6420 / (011) 2666-4521</li>
+                      <li>Whatsapp: (011) 15-2145-4535 / (011) 15-5688-6478 </li>
+                  </ul> 
+                </div> 
               </div>
-              <div class="d-flex justify-content-lg-star">
-                <button type="submit" class="btn btn-primary mb-3 ">Enviar</button>
-              </div>
-              <div class="d-flex justify-content-lg-end">
-                <img src="../images/map.jpg" width="100%" class="map" alt="">
-              </div>
-           </div>
-           
-          <!--<article class="redes">
-            <p>Seguinos en nuestras redes y comunicate con nosotros!</p>
-          <br>
-         
-        </article>--> 
+            </div>
+            
+            
+          <div class="redes">
+              <h4>Seguinos también en nuestras redes!</h4>
+          </div>          
+            
+          <div class="contacto contacto-c"> 
+            <div class=" "> 
+              <img src="../images/instagram.png" width="35px" alt="instagram"> 
+            </div>  
+            <div>
+              <a href="http://instagram.com/hogar_huellitas" class="contacto_text" target="blank">Instagram</a>
+            </div>
+          
+            <div class=" ">
+              <img src="../images/facebook.png" width="35px" alt="facebook">
+            </div> 
+            <div>
+              <a href="http://www.facebook.com/hogar_huellitas" class="contacto_text" target="blank">Facebook</a>
+            </div> 
+
+            <div>
+              <img src="../images/whatsapp.png" width="35px" alt="whatsapp">
+            </div>
+            <div>
+              <a href="https://api.whatsapp.com/send/?phone=&text&app_absent=0" class="contacto_text"
+              target="blank">WhatsApp</a>
+            </div>
+          </div>
+        
         </section>
     </main>
 
-    <footer> 
-      <div class="div-footer">
-        <img src="../images/hand.paw.png" class="logo_footer" width="100px" alt="hand_paw">
-        
-        <div class="footer-txt">
-            <h3>Hogar Huellitas.</h3>
-        <h5>Todos los derechos reservados</h5>
-        <h5>Buenos Aires, Argentina</h5>
-        <h6>2022</h6>
-        </div> 
+  <footer class="footer-contacto"> 
+      <div class="div-fc">      
+          <img src="../images/hand.paw.png" class="logo-fc" width="100px" alt="hand_paw">
+          <div class="footer-txt">
+              <h3>Hogar Huellitas. </h3>
+              <h5>Todos los derechos reservados</h5>
+              <h5>Buenos Aires, Argentina </h5>
+              <h6>2022</h6>
+          </div> 
+          
+          <div class="tel">
+              <ul>
+                  <li>Dr. Luis Beláustegui 1385, CABA</li>
+                  <li>(011) 4598-6420</li>
+                  <li>(011) 2666-4521</li>
+              </ul> 
+          </div>    
       </div>
-           
-
-    <div class="contacto">
-        <div>
-            <a href="https://api.whatsapp.com/send/?phone=&text&app_absent=0" class="contacto_text"
-            target="blank">WhatsApp</a>
-        <img src="../images/whatsapp.png" width="25px" alt="whatsapp">
-        </div>
-        <div> 
-        <a href="http://instagram.com/hogar_huellitas" class="contacto_text" target="blank">Instagram</a>
-        <img src="../images/instagram.png" width="25px" alt="instagram"> 
-        </div>
-        <div>
-            <a href="http://www.facebook.com/hogar_huellitas" class="contacto_text" target="blank">Facebook</a>
-        <img src="../images/facebook.png" width="25px" alt="facebook">
-        </div>
-    </div>  
-</footer>
+      
+      <div class="contacto-c">
+          <div>
+              <a href="https://api.whatsapp.com/send/?phone=&text&app_absent=0" class="contacto_text" target="blank">WhatsApp</a>
+              <img src="../images/whatsapp.png" width="25px" alt="whatsapp">
+          </div>
+          <div> 
+              <a href="http://instagram.com/hogar_huellitas" class="contacto_text" target="blank">Instagram</a>
+              <img src="../images/instagram.png" width="25px" alt="instagram"> 
+          </div>
+          <div>
+              <a href="http://www.facebook.com/hogar_huellitas" class="contacto_text" target="blank">Facebook</a>
+              <img src="../images/facebook.png" width="25px" alt="facebook">
+          </div>
+      </div>   
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

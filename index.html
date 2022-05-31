@@ -20,12 +20,12 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+    <link rel="stylesheet" href="https://fontawesome.com">
 </head>
 
 <body>
@@ -93,6 +93,7 @@
             <h4 class="animate__fadeIn animate__animated">Guardería canina los 365 días del año.</h4>
             <h4 class="animate__fadeIn animate__animated">Paseos, atención veterinaria profesionales y adiestradores apasionados del rubro.</h4>
         </div> 
+        
         <div>
             <img src="./images/pupy.png" class="img_index py-3" width="100%" alt="dog">
         </div> 
@@ -100,70 +101,127 @@
         <div class="caja-texto">
             <p class="texto">
             <i>"Su amor es infinito puro e incondicional, él es un eterno cachorro que solo piensa en amarnos."</i></p>
-          </div>
+        </div>
         
         <div class="caja-img">
-        <div class="imagenes">
-            <div class="img">
-                <img src="./images/family.jpg" class="img_nos img-fluid" width="100%" alt="family">
-                <div class="txt conocenos">
-                 <a href="./pages/nosotros.html">Conocenos</a>
-                </div>
-            </div>
-            <div class="img">
-                <img src="./images/dog_22.jpg"  class="img_serv img-fluid" width="100%" alt="dog_22">
-                <div class="txt servicios">
-                 <a href="./pages/servicio.html">Servicios</a>
-                </div>
-            </div>
-            <div class="img">
-                <img src="./images/amily4.jpg" class="img_volun img-fluid" width="100%" alt="voluntario">
-                <div class="txt voluntario">
-                 <a href="./pages/nosotros.html">Voluntariado</a>
-                </div>
-            </div>
-        </div>
-        <div class="img">
-            <img src="./images/dog_23.jpg" class="img_adopcion img-fluid" width="100%" alt="dog_23">
-                <div class="txt voluntario">
-                 <a href="./pages/nosotros.html">Adoptá</a>
-                </div>
-        </div>
-        </div>
-
-       
+            <div class="imagenes">
+                <a class="navbar-brand img" href="./pages/nosotros.html">
+                    <img src="./images/family.jpg" class="img_nos " width="100%" alt="family">
+                    <p class="txt ">Conocenos</p>
+                </a>
             
+                <a class="navbar-brand img" href="./pages/servicio.html">
+                    <img src="./images/dog_22.jpg"  class="img_serv " width="100%" alt="dog_22">
+                    <p class="txt txt_serv">Servicios</p>
+                </a>
 
+                <a class="navbar-brand img" href="#Voluntariado">
+                    <img src="./images/amily4.jpg" class="img_volun " width="100%" alt="voluntario">
+                    <p class="txt txt_vol">Voluntariado</p>
+                </a>            
+            </div>
+
+            <div class="img">
+                <a class="navbar-brand img" href="#Adoptá">
+                    <img src="./images/dog_23.jpg" class="img_adopcion " width="100%" alt="dog_23">
+                    <p class="txt txt_adopta">Adoptá</p>
+                </a>
+            </div>
+        </div>
+
+        <article>
+            <div class="card my-5 cartav">
+                <div class="row g-0 cards ">
+                  <div class="col-md-4">
+                    <img src="./images/voluntario1.jpg"  width="100%" class="rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title" id="Voluntariado">Voluntariado/Colaboraciones</h3>
+                      <p class="card-text card-txt">Si quieres formar parte de nuestro equipo y estás decidido a dedicar tiempo, esfuerzo y a comprometerte de manera seria y responsable para lograr que cientos de animales reciban la ayuda que necesitan y logren encontrar el hogar que se merecen, contactanos, haciendo <a href="./pages/contacto.html">Click Aquí.</a></p>
+                    </div> 
+                  </div>
+                </div>
+            </div>
+
+            <div class="card my-5 cartaa">
+                <div class="row g-0 cards">
+                  <div class="col-md-4">
+                    <img src="./images/adopta.jpg"   class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title" id="Adoptá">Adopciones</h3>
+                      <p class="card-text card-txt">Muchos perritos sin hogar están esperando uno que le brinden mucha calidez, cuidado y sobretodo mucho amor, ellos te lo agradecerán de por vida y la tuya estará llena de amor incondicional y mucha felicidad! ¿Qué esperás para adoptar uno o más? Hacé <a href="">click aquí</a> para más información.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        <hr>
+            <div>
+                <h3 class="animate__animated animate__pulse">Opiniones de Nuestros Clientes</h3>
+            </div>
+            <div class="testimonios">
+                <div class="caja1">
+                    <div class="img-t">
+                        <img src="./images/quotes.png" width="10%" alt="">
+                    </div>
+                    <div class="caja">
+                        <i class="comentario comentario1">¡Hermoso todo en Hogar huellitas! Dejé a mi perrito Odín por una semana cuando me fui de viaje y la verdad lo trataron súper bien, me mandaron fotos y videos todos los días e incluso aprendió a darme la patita gracias a las clases de adiestramiento! Súper recomendado ❤</i>
+                        <p><strong><i>Cecy</i></strong></p>
+                    </div>   
+                </div>
+                
+                <div class="caja2">
+                    <div class="img-t">
+                        <img src="./images/quotes.png" width="10%" alt="">
+                    </div>
+                    <div class="caja">
+                        <i class="comentario comentario2">Una muy buena experiencia! 
+                            Todos los colaboradores del "Hogar Huellitas" son muy amables y atentos. En todo momento me mantuvieron informado sobre el estado de mi mascota, aguantando incluso mis constantes preguntas al tratarse de mi primera experiencia con un lugar de este estilo.
+                            Adicionalmente, también destaco la gran labor en disciplina que realizaron, en tan solo dos semanas hubo un cambio increíble con mi perro "koky" respecto a las caminatas y saltos.
+                            Lo recomiendo absolutamente.</i>
+                            <p><strong><i>Luca</i></strong></p>
+                        </div>
+                </div>   
+            </div>
+        </article>
     </main>
 
     <footer> 
-          <div class="div-footer">
+        <div class="div-footer">      
             <img src="./images/hand.paw.png" class="logo_footer" width="100px" alt="hand_paw">
-            
             <div class="footer-txt">
-                <h3>Hogar Huellitas.</h3>
-            <h5>Todos los derechos reservados</h5>
-            <h5>Buenos Aires, Argentina</h5>
-            <h6>2022</h6>
+                <h3>Hogar Huellitas. </h3>
+                <h5>Todos los derechos reservados</h5>
+                <h5>Buenos Aires, Argentina </h5>
+                <h6>2022</h6>
             </div> 
-          </div>
-               
- 
+            
+            <div class="tel">
+                <ul>
+                    <li>Dr. Luis Beláustegui 1385, CABA</li>
+                    <li>(011) 4598-6420</li>
+                    <li>(011) 2666-4521</li>
+                </ul> 
+            </div>    
+        </div>
+        
         <div class="contacto">
             <div>
                 <a href="https://api.whatsapp.com/send/?phone=&text&app_absent=0" class="contacto_text"
-                target="blank">WhatsApp</a>
-            <img src="./images/whatsapp.png" width="25px" alt="whatsapp">
+                    target="blank">WhatsApp</a>
+                <img src="./images/whatsapp.png" width="25px" alt="whatsapp">
             </div>
             <div> 
-            <a href="http://instagram.com/hogar_huellitas" class="contacto_text" target="blank">Instagram</a>
-            <img src="./images/instagram.png" width="25px" alt="instagram"> 
+                <a href="http://instagram.com/hogar_huellitas" class="contacto_text" target="blank">Instagram</a>
+                <img src="./images/instagram.png" width="25px" alt="instagram"> 
             </div>
             <div>
                 <a href="http://www.facebook.com/hogar_huellitas" class="contacto_text" target="blank">Facebook</a>
-            <img src="./images/facebook.png" width="25px" alt="facebook">
+                <img src="./images/facebook.png" width="25px" alt="facebook">
             </div>
-        </div>  
+        </div>   
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

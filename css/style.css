@@ -5,28 +5,6 @@
 /*colores*/
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -49,63 +27,84 @@ main {
 /*Font-size*/
 /*Font*/
 /*colores*/
-/*Font-size*/
-/*Font*/
-/*colores*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.contacto-c, html .main_index .caja-texto, .footer-contacto .div-fc, footer .tel {
+  display: flex;
+  justify-content: center;
 }
 
-p, h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+html .main_index .caja1, html .main_index .caja2 {
+  border: solid 2px whitesmoke;
 }
 
-.intro {
-  text-align: center;
-}
-
-main {
-  padding: 30px;
-}
-
-/*Font-size*/
-/*Font*/
-/*colores*/
-/*Font-size*/
-/*Font*/
-/*colores*/
 footer {
   height: 25vh;
   position: relative;
-  bottom: 0;
   background-color: violet;
   color: whitesmoke;
 }
+@media screen and (max-width: 450px) {
+  footer {
+    height: 22vh;
+    margin-top: 35vh;
+  }
+}
 footer .div-footer {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr 0fr;
+  height: 22vh;
+}
+@media screen and (max-width: 450px) {
+  footer .div-footer {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3px;
+    font-size: 10px;
+  }
 }
 footer .contacto {
   z-index: 2;
   display: flex;
   justify-content: end;
-  margin: -30px 11px;
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+}
+@media screen and (max-width: 450px) {
+  footer .contacto {
+    bottom: 40px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  footer .contacto {
+    bottom: 15px;
+  }
+}
+footer .tel {
+  margin-top: 20px;
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  footer .tel {
+    margin-top: 0;
+  }
 }
 footer .footer-txt {
   margin: 5px;
+  position: relative;
+  right: 120px;
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
+  footer .footer-txt {
+    right: 40px;
+  }
   footer .footer-txt h3, footer .footer-txt h5, footer .footer-txt h6 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
   }
 }
 @media screen and (max-width: 450px) {
+  footer .footer-txt {
+    right: 10px;
+  }
   footer .footer-txt h3, footer .footer-txt h5, footer .footer-txt h6 {
     font-size: 12px;
     font-weight: 700;
@@ -121,113 +120,99 @@ footer .footer-txt {
     display: none;
   }
 }
-
-/*Font-size*/
-/*Font*/
-/*colores*/
-/*Font-size*/
-/*Font*/
-/*colores*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+footer .logo_footer {
+  position: relative;
+  left: 30px;
 }
-
-p, h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  footer .logo_footer {
+    left: 0;
+  }
 }
-
-.intro {
-  text-align: center;
-}
-
-main {
-  padding: 30px;
-}
-
-/*Font-size*/
-/*Font*/
-/*colores*/
 @media screen and (max-width: 450px) {
-  .div-img .imagenes {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    margin-top: 15vh;
-  }
-  .div-img img {
-    position: absolute;
-    width: 100%;
-    animation: display 20s infinite;
-  }
-  .div-img .img_1 {
-    animation-delay: 3s;
-  }
-  .div-img .img_2 {
-    animation-delay: 6s;
-  }
-  .div-img .img_3 {
-    animation-delay: 9s;
-  }
-  .div-img .img_4 {
-    animation-delay: 12s;
-  }
-  .div-img .img_5 {
-    animation-delay: 15s;
-  }
-  .div-img .img_6 {
-    animation-delay: 18s;
-  }
-  .div-img .img_7 {
-    animation-delay: 21s;
-  }
-  @keyframes display {
-    0% {
-      transform: translateX(200px);
-      opacity: 0;
-    }
-    10% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    30% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(-200px);
-      opacity: 0;
-    }
+  footer .logo_footer {
+    left: 0;
   }
 }
 
-/*Font-size*/
-/*Font*/
-/*colores*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (max-width: 450px) {
+  .footer-contacto {
+    margin-top: 20vh;
+  }
+}
+.footer-contacto .contacto-c {
+  display: none;
+}
+.footer-contacto .tel {
+  display: none;
+}
+.footer-contacto .div-fc {
+  align-items: center;
+  gap: 100px;
+}
+.footer-contacto .logo-fc {
+  position: relative;
+  right: 15px;
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  .footer-contacto .logo-fc {
+    left: 70px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer-contacto .logo-fc {
+    left: 100px;
+  }
 }
 
-p, h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+.imagenes .img-g {
+  position: relative;
+  width: 60vw;
+  height: 100vh;
+  margin-top: 15vh;
+}
+.imagenes .img-g > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+.imagenes img:nth-child(2) {
+  animation-delay: 2s;
+}
+.imagenes img:nth-child(3) {
+  animation-delay: 4s;
+}
+.imagenes img:nth-child(4) {
+  animation-delay: 6s;
+}
+.imagenes img:nth-child(5) {
+  animation-delay: 8s;
 }
 
-.intro {
-  text-align: center;
-}
-
-main {
-  padding: 30px;
-}
-
-/*Font-size*/
-/*Font*/
-/*colores*/
 html {
   margin: 2px;
 }
@@ -236,11 +221,6 @@ html body {
   background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
   height: 100vh;
   padding: 5px;
-}
-@media screen and (max-width: 450px) {
-  html body {
-    height: 50rem;
-  }
 }
 html body header .tittle {
   font-family: "Luckiest Guy", cursive;
@@ -267,46 +247,34 @@ html body header .tittle {
     background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
   }
 }
-html .main_index {
-  /*  .paw1{
-        position: relative;
-        z-index: -1;
-        width: 7%;
-        animation: walk 7s steps(7, end) infinite;
-          @keyframes walk {
-            to {
-              transform: translateY(-500px);
-            }
-          }
-    }
-    .paw2{
-        position: relative;
-        z-index: -1;
-        width: 7%;
-        animation: walk 7s steps(5, end) infinite;
-          @keyframes walk {
-            to {
-              transform: translateY(-500px);
-            }
-          }
-    }
-    */
+@media screen and (max-width: 450px) {
+  html .main_index .intro {
+    height: 150px;
+    margin: 20px auto auto auto;
+  }
+}
+html .main_index .caja-img {
+  border-top: solid 2px whitesmoke;
+  border-bottom: solid 2px whitesmoke;
+  margin-top: 40px;
+  padding: 70px;
 }
 html .main_index .caja-texto {
   background: white;
-  display: flex;
-  justify-content: center;
   border-radius: 40px;
 }
 html .main_index .imagenes {
   display: flex;
-  justify-content: space-between;
-  margin-top: 220px;
+  justify-content: space-around;
+  margin-top: 125px;
   z-index: 2;
 }
 @media screen and (max-width: 450px) {
   html .main_index .imagenes {
-    margin-top: 20px;
+    position: relative;
+    top: 40px;
+    left: 15px;
+    margin: -25px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -316,15 +284,60 @@ html .main_index .imagenes {
   }
 }
 html .main_index .txt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: -80px;
+  color: black;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 40px;
+  position: absolute;
+  top: 95px;
+  left: 8px;
   z-index: 3;
 }
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html .main_index .txt {
+    font-size: 25px;
+    top: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  html .main_index .txt {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html .main_index .txt_serv {
+    font-size: 25px;
+    top: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  html .main_index .txt_vol {
+    position: relative;
+    top: -85px;
+    left: -30px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html .main_index .txt_vol {
+    position: relative;
+    top: -85px;
+    left: -30px;
+  }
+}
+html .main_index .txt_adopta {
+  position: relative;
+  left: 80%;
+  top: -88px;
+}
+@media screen and (max-width: 450px) {
+  html .main_index .txt_adopta {
+    left: 75%;
+    top: -5px;
+  }
+}
 html .main_index .img {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 html .main_index .img_nos {
   width: 25vw;
@@ -344,6 +357,11 @@ html .main_index .img_serv {
 @media screen and (max-width: 450px) {
   html .main_index .img_serv {
     top: 0;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html .main_index .img_serv {
+    top: -95px;
   }
 }
 html .main_index .img {
@@ -367,20 +385,41 @@ html .main_index .img_volun {
 html .main_index .img_adopcion {
   width: 45vw;
   z-index: 2;
-  position: relative;
   border-radius: 70%;
-  top: -80px;
+  position: relative;
+  left: 245px;
 }
 @media screen and (max-width: 450px) {
   html .main_index .img_adopcion {
-    top: 20px;
+    top: 40px;
+    left: 25px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html .main_index .img_adopcion {
+    left: 100px;
   }
 }
 @media screen and (max-width: 450px) {
-  html .main_index .intro {
-    height: 150px;
-    margin: 20px auto auto auto;
+  html .main_index .card-txt {
+    font-size: 12px;
   }
+}
+html .main_index .testimonios {
+  display: grid;
+  grid-template-columns: 4fr 4fr 0fr 0fr;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 450px) {
+  html .main_index .testimonios {
+    margin-top: 60px;
+    grid-template-columns: none;
+    gap: 80px;
+  }
+}
+html .main_index .caja1, html .main_index .caja2 {
+  background-color: rgba(252, 252, 252, 0.5215686275);
+  border-radius: 50%;
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
   html h1, html h3 {
@@ -399,34 +438,11 @@ html .main_index .img_adopcion {
   }
 }
 
-/*Font-size*/
-/*Font*/
-/*colores*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.redes {
+  margin: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
-
-p, h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-}
-
-.intro {
-  text-align: center;
-}
-
-main {
-  padding: 30px;
-}
-
-/*Font-size*/
-/*Font*/
-/*colores*/
-/*Font-size*/
-/*Font*/
-/*colores*/
 @media screen and (max-width: 450px) {
   .redes {
     display: flex;
@@ -435,14 +451,44 @@ main {
   }
 }
 
-textarea {
-  height: 20vh;
-  width: 47vw;
-  margin: 0px 10px;
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: solid 2px rgb(248, 228, 240);
+  margin-top: 4px;
+  margin-bottom: 16px;
 }
 
-.map {
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: solid 2px rgb(231, 251, 190);
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.mapa, .column {
   width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.contacto-c {
+  align-items: flex-end;
+  gap: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .row form {
+    width: 220%;
+  }
+  .row .mapa {
+    position: relative;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

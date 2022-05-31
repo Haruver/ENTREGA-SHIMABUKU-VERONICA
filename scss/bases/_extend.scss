@@ -2,7 +2,19 @@
 
 %flex{
        display: flex;
-       justify-content: center;
-       text-align: center;
-       align-items: flex-start;
+       justify-content: center; 
      }
+
+
+%flex-align{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: flex-start;
+}
+
+%border{
+  border: solid 2px whitesmoke;
+}
+
+ 
