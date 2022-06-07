@@ -1,11 +1,10 @@
 
-html{
-    margin: 2px;
+html{ 
     body{
         background:$bg;
         background:$bg-color-1;
         height: 100vh;
-        padding: 5px;
+        
         header{
             .tittle{
                 font-family: $nav-font;
@@ -28,6 +27,9 @@ html{
             }
         }
     }
+    .barra{
+        margin: 20px; 
+    }
     .main_index{
         .intro{  
             @include mobile{
@@ -35,28 +37,52 @@ html{
             margin: 20px auto auto auto;
            }
         } 
-        .caja-img{ 
-            border-top: solid 2px whitesmoke;
-            border-bottom: solid 2px whitesmoke; 
-            margin-top: 40px;
-            padding: 70px;
+        .caja_img{  
+            display: flex;
+            justify-content: center; 
+            margin-top: 100px;
+                @include mobile{ 
+                    margin-top: 50px;
+                }
+                @include tablet{ 
+                    margin-top: 50px;
+                }
+            .img1,
+            .img3{
+                position: relative;
+                top: 180px;
+                    @include mobile{ 
+                        position: relative;
+                        top: 80px;
+                    }
+                    @include tablet{
+                        position: relative;
+                        top: 100px;
+                    }
+            }
         }
-        .caja-texto{
+            .img4{
+                text-align: center;
+            }
+            .img_adopcion{ 
+                border-radius: 70%;  
+                width: 70%;  
+            }
+            .img_volun{ 
+                border-radius: 70%;  
+            }
+            .img_nos{  
+                border-radius: 70%; 
+                }
+            .img_serv{ 
+                border-radius: 70%; 
+                background-color: white;  
+            }
+
+        .caja_texto{
             background: white; 
             @extend %flex;
             border-radius: 40px;
-        }
-        .imagenes{
-            display: flex;
-            justify-content: space-around;
-            margin-top: 125px;
-            z-index: 2;
-            @include mobile{  
-                position: relative;
-                top: 40px; 
-                left: 15px;
-                margin: -25px;
-            }
         }
         .texto{ 
             @include mobile{ 
@@ -65,127 +91,39 @@ html{
             }
         }
         .txt{
-            color: black;
+            color: #e9f9c3;
+            -webkit-text-stroke: 1px black;
             font-family: $nav-font;
-            font-size: nth($font-size, 1 );
-            position: absolute;
-            top: 95px;
-            left: 8px;
+            font-size: nth($font-size, 1 ); 
             z-index: 3;
-            @include tablet{
-                font-size: nth($font-size, 3 );
-                top: 40%;
-            }
-            @include mobile{
-                font-size: nth($font-size, 7 );
-
-            }
+            position: relative;
+            bottom: 100px;
+                @include tablet{
+                    font-size: nth($font-size, 3 );
+                    position: relative;
+                    bottom: 30px;
+                }
+                @include mobile{
+                    font-size: nth($font-size, 7 );
+                    position: relative;
+                    bottom: 25px;
+                    -webkit-text-stroke: 0.5px black;
+                }
         }  
-        .txt_serv{
-            @include tablet{
-                font-size: nth($font-size, 3 );
-                top: 0;
-            }
-        }
-        .txt_vol{
-            @include mobile{
-                position: relative;
-                top: -85px;
-                left: -30px;
-            }
-            @include tablet{
-                position: relative;
-                top: -85px;
-                left: -30px;
-            }
-        }
-        .txt_adopta{
-            position: relative;
-            left: 80%;
-            top: -88px;
-            @include mobile{
-                left: 75%;
-                top: -5px;
-            }
-        }
-        .img{
-            position: relative;
-            display: inline-block;
-            text-align: center;
-          
-        } 
-        
-        .img_nos{ 
-            width: 25vw;
-            z-index: 2;
-            position: relative;
-            border-radius: 70%;
-            top: 46px;
-            }
-        
-        .img_serv{
-            position: relative;
-            z-index: 2;
-            border-radius: 70%;
-            width: 25vw;
-            top: -145px;
-            background-color: white; 
-            @include mobile{
-                top: 0;
-            }
-            @include tablet{
-                top: -95px;
-            }
-        }
-        .img{
-            transition-property: all;
-            transition-duration: 2s;
-        }
-        .img:hover {
-            opacity: .75;
-            transform: scale(1);
-        }
-        .servicios{
-            position: relative;
-        }
-        .img_volun{
-            width: 25vw;
-            z-index: 2;
-            position: relative;
-            border-radius: 70%;          
-            top: 46px;  
-        }
-        
-        .img_adopcion{
-            width: 45vw;
-            z-index: 2;
-            border-radius: 70%;   
-            position: relative;
-            left: 245px;
-           
-            @include mobile{
-                top: 40px;
-                left: 25px;
-            }         
-            @include tablet{
-                left: 100px;
-            }
-        }
         .card-txt{
             @include mobile{
-                font-size: nth($font-size, 6 );
+                font-size: nth($font-size, 7 );
             }
-        }
-
+        } 
         .testimonios{  
             display: grid;
             grid-template-columns: 4fr 4fr 0fr 0fr; 
             margin-bottom: 40px;
-            @include mobile{
-                margin-top: 60px;
-                grid-template-columns: none;
-                gap: 80px;
-            }
+                @include mobile{
+                    margin-top: 60px;
+                    grid-template-columns: none;
+                    gap: 80px;
+                }
         }
         .caja1, .caja2{ 
             background-color: #fcfcfc85;
@@ -199,7 +137,7 @@ html{
             font-size: nth($font-size, 3);
         }
         h4, h5, h6, p{
-            font-size: nth($font-size, 4 );
+            font-size: nth($font-size, 5 );
         }
     }
     @include mobile{
@@ -207,14 +145,10 @@ html{
             font-size: nth($font-size, 4);
         }
         h4, h5, h6, p{
-            font-size: nth($font-size, 5 );
+            font-size: nth($font-size, 6);
         }
     }
 
 }
-
-
  
-
-
- 
+  

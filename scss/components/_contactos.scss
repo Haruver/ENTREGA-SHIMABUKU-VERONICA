@@ -3,11 +3,11 @@
     margin: 50px;
     display: flex;
     justify-content: space-evenly;
-    @include mobile{
+      @include mobile{
         display: flex;
         flex-direction: column;  
         align-items: center;
-    }
+      }
 }
  
  
@@ -30,20 +30,26 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.mapa, .column {
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+.mapa, 
+.column {
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
 }
 
 .contacto-c{
     @extend %flex;
     align-items: flex-end;
     gap: 15px;
+      @include mobile{
+        gap: 20;
+        flex-direction: column;
+        align-items: center;
+      }
 } 
 
 .row{
-  @include mobile{
+  @include tablet{
     form{
       width: 220%;
     }
@@ -51,6 +57,36 @@ input[type=submit]:hover {
       position: relative; 
       width: 100%;
     }
-
   }
+  @include mobile{
+    form{
+      width: 220%;
+    }
+    .mapa{ 
+      position: relative; 
+      width: 100%;
+    } 
+  }
+}
+
+
+.footer-contacto{ 
+    .contacto-c{
+      display: none;
+    }
+    .tel{
+      display: none;
+    }
+    .div-fc{
+      @extend %flex;
+      align-items: center; 
+      height: 18vh;
+    }   
+    .txt-contacto{
+      margin-top: 40px;
+    }
+    .volver_c{
+      position: relative;
+      left: 10px;
+    }
 }

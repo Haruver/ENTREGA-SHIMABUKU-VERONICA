@@ -1,24 +1,25 @@
 
-footer{
+footer{  
     height: map-get($footer, height);
     position: relative;
     background-color: map-get($footer, bg-footer );
     color: map-get($footer, txt-color);
-    @include mobile{
-        height: 22vh;
-        margin-top: 35vh;
-    } 
     
    .div-footer{
-    display: grid; 
-    grid-template-columns: 2fr 5fr 3fr 0fr;
-    height: 22vh;
-         @include mobile{ 
-            display: flex;
-            align-items: flex-start;
-            padding-top: 3px; 
-            font-size: 10px;
-         }
+        display: grid; 
+        grid-template-columns: 2fr 5fr 3fr 0fr; 
+        height: 18vh;
+            @include tablet{
+                grid-template-columns:  1fr 4fr 2fr 0fr;
+                justify-items: start;
+                align-items: center; 
+            }
+            @include mobile{ 
+                display: flex;
+                align-items: flex-start;
+                padding-top: 3px; 
+                font-size: 10px;
+            } 
     }
     .contacto{
         z-index: 2;
@@ -27,26 +28,39 @@ footer{
         position: relative;
         bottom: 15px; 
         right: 15px;
-       @include mobile{  
-            bottom: 40px;
-        }
-        @include tablet{
-            bottom: 15px;
-        }
+            @include mobile{  
+                bottom: 20px;
+            }
+            @include tablet{
+                bottom: 15px;
+            }
+    }
+    .volver_i{
+        z-index: 3;
+        position: relative;
+        left: 130px;
+            a{
+                color: whitesmoke;
+                z-index: 3;
+            }
+            @include tablet{
+                left: 30px;
+            }
+            @include mobile{
+                left: 20px;
+            }
     }
     .tel{
         @extend %flex;
         margin-top: 20px;
-        @include tablet{
-            margin-top: 0;
-        }
+            @include tablet{
+                margin-top: 0;
+                font-size: nth($font-size, 7);
+            }
     }
-    .footer-txt{
-        margin: 5px;
-        position: relative;
-        right: 120px;
+    .footer-txt{  
         @include tablet{
-            right: 40px;
+            right: 0;
             h3, h5, h6{
                 font-size: nth($font-size, 7);
                 font-weight: $font-bold;
@@ -55,56 +69,28 @@ footer{
         @include mobile{
             right: 10px;
             h3, h5, h6{
-                font-size: nth($font-size, 6);
+                font-size: nth($font-size, 7);
                 font-weight: $font-bold;
                     }
             }
     }
     .contacto_text{
-        @include tablet{
-            display: none;
-        }
-        @include mobile{
-            display: none;
-        }
-    }  
-    .logo_footer{
-        position: relative;
-        left: 30px;
-        @include tablet{
-            left:0;
-        }
-        @include mobile{
-            left: 0;
-        }
-    }
-    
-}
-
-.footer-contacto{
-    @include mobile{
-        margin-top: 20vh;
-    }
-    .contacto-c{
-        display: none;
-    }
-    .tel{
-        display: none;
-    }
-    .div-fc{
-        @extend %flex;
-        align-items: center;
-        gap: 100px;
-    }    
-    .logo-fc{ 
-            position: relative;
-            right: 15px;
+        color: $color-smoke ;
             @include tablet{
-                left:70px;
+                display: none;            
             }
             @include mobile{
-                left: 100px;
+                display: none;
+            }
+    }  
+   .logo_footer{
+        position: relative;
+        left: 100px;
+            @include tablet{
+                left: 0px;
+            }
+            @include mobile{
+                left: 0;
             }
     } 
 }
- 

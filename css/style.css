@@ -27,7 +27,7 @@ main {
 /*Font-size*/
 /*Font*/
 /*colores*/
-.contacto-c, html .main_index .caja-texto, .footer-contacto .div-fc, footer .tel {
+.footer-contacto .div-fc, .contacto-c, html .main_index .caja_texto, footer .tel {
   display: flex;
   justify-content: center;
 }
@@ -42,16 +42,17 @@ footer {
   background-color: violet;
   color: whitesmoke;
 }
-@media screen and (max-width: 450px) {
-  footer {
-    height: 22vh;
-    margin-top: 35vh;
-  }
-}
 footer .div-footer {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr 0fr;
-  height: 22vh;
+  height: 18vh;
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  footer .div-footer {
+    grid-template-columns: 1fr 4fr 2fr 0fr;
+    justify-items: start;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 450px) {
   footer .div-footer {
@@ -71,12 +72,31 @@ footer .contacto {
 }
 @media screen and (max-width: 450px) {
   footer .contacto {
-    bottom: 40px;
+    bottom: 20px;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
   footer .contacto {
     bottom: 15px;
+  }
+}
+footer .volver_i {
+  z-index: 3;
+  position: relative;
+  left: 130px;
+}
+footer .volver_i a {
+  color: whitesmoke;
+  z-index: 3;
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  footer .volver_i {
+    left: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer .volver_i {
+    left: 20px;
   }
 }
 footer .tel {
@@ -85,19 +105,15 @@ footer .tel {
 @media screen and (min-width: 451px) and (max-width: 960px) {
   footer .tel {
     margin-top: 0;
+    font-size: 12px;
   }
-}
-footer .footer-txt {
-  margin: 5px;
-  position: relative;
-  right: 120px;
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
   footer .footer-txt {
-    right: 40px;
+    right: 0;
   }
   footer .footer-txt h3, footer .footer-txt h5, footer .footer-txt h6 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
   }
 }
@@ -109,6 +125,9 @@ footer .footer-txt {
     font-size: 12px;
     font-weight: 700;
   }
+}
+footer .contacto_text {
+  color: whitesmoke;
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
   footer .contacto_text {
@@ -122,46 +141,16 @@ footer .footer-txt {
 }
 footer .logo_footer {
   position: relative;
-  left: 30px;
+  left: 100px;
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
   footer .logo_footer {
-    left: 0;
+    left: 0px;
   }
 }
 @media screen and (max-width: 450px) {
   footer .logo_footer {
     left: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .footer-contacto {
-    margin-top: 20vh;
-  }
-}
-.footer-contacto .contacto-c {
-  display: none;
-}
-.footer-contacto .tel {
-  display: none;
-}
-.footer-contacto .div-fc {
-  align-items: center;
-  gap: 100px;
-}
-.footer-contacto .logo-fc {
-  position: relative;
-  right: 15px;
-}
-@media screen and (min-width: 451px) and (max-width: 960px) {
-  .footer-contacto .logo-fc {
-    left: 70px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .footer-contacto .logo-fc {
-    left: 100px;
   }
 }
 
@@ -213,14 +202,10 @@ footer .logo_footer {
   animation-delay: 8s;
 }
 
-html {
-  margin: 2px;
-}
 html body {
   background: rgb(231, 251, 190);
   background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
   height: 100vh;
-  padding: 5px;
 }
 html body header .tittle {
   font-family: "Luckiest Guy", cursive;
@@ -247,35 +232,69 @@ html body header .tittle {
     background: radial-gradient(circle, rgb(231, 251, 190) 23%, rgb(248, 228, 240) 65%);
   }
 }
+html .barra {
+  margin: 20px;
+}
 @media screen and (max-width: 450px) {
   html .main_index .intro {
     height: 150px;
     margin: 20px auto auto auto;
   }
 }
-html .main_index .caja-img {
-  border-top: solid 2px whitesmoke;
-  border-bottom: solid 2px whitesmoke;
-  margin-top: 40px;
-  padding: 70px;
-}
-html .main_index .caja-texto {
-  background: white;
-  border-radius: 40px;
-}
-html .main_index .imagenes {
+html .main_index .caja_img {
   display: flex;
-  justify-content: space-around;
-  margin-top: 125px;
-  z-index: 2;
+  justify-content: center;
+  margin-top: 100px;
 }
 @media screen and (max-width: 450px) {
-  html .main_index .imagenes {
-    position: relative;
-    top: 40px;
-    left: 15px;
-    margin: -25px;
+  html .main_index .caja_img {
+    margin-top: 50px;
   }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html .main_index .caja_img {
+    margin-top: 50px;
+  }
+}
+html .main_index .caja_img .img1,
+html .main_index .caja_img .img3 {
+  position: relative;
+  top: 180px;
+}
+@media screen and (max-width: 450px) {
+  html .main_index .caja_img .img1,
+html .main_index .caja_img .img3 {
+    position: relative;
+    top: 80px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  html .main_index .caja_img .img1,
+html .main_index .caja_img .img3 {
+    position: relative;
+    top: 100px;
+  }
+}
+html .main_index .img4 {
+  text-align: center;
+}
+html .main_index .img_adopcion {
+  border-radius: 70%;
+  width: 70%;
+}
+html .main_index .img_volun {
+  border-radius: 70%;
+}
+html .main_index .img_nos {
+  border-radius: 70%;
+}
+html .main_index .img_serv {
+  border-radius: 70%;
+  background-color: white;
+}
+html .main_index .caja_texto {
+  background: white;
+  border-radius: 40px;
 }
 @media screen and (max-width: 450px) {
   html .main_index .texto {
@@ -284,120 +303,27 @@ html .main_index .imagenes {
   }
 }
 html .main_index .txt {
-  color: black;
+  color: #e9f9c3;
+  -webkit-text-stroke: 1px black;
   font-family: "Luckiest Guy", cursive;
   font-size: 40px;
-  position: absolute;
-  top: 95px;
-  left: 8px;
   z-index: 3;
+  position: relative;
+  bottom: 100px;
 }
 @media screen and (min-width: 451px) and (max-width: 960px) {
   html .main_index .txt {
     font-size: 25px;
-    top: 40%;
+    position: relative;
+    bottom: 30px;
   }
 }
 @media screen and (max-width: 450px) {
   html .main_index .txt {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 960px) {
-  html .main_index .txt_serv {
-    font-size: 25px;
-    top: 0;
-  }
-}
-@media screen and (max-width: 450px) {
-  html .main_index .txt_vol {
+    font-size: 12px;
     position: relative;
-    top: -85px;
-    left: -30px;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 960px) {
-  html .main_index .txt_vol {
-    position: relative;
-    top: -85px;
-    left: -30px;
-  }
-}
-html .main_index .txt_adopta {
-  position: relative;
-  left: 80%;
-  top: -88px;
-}
-@media screen and (max-width: 450px) {
-  html .main_index .txt_adopta {
-    left: 75%;
-    top: -5px;
-  }
-}
-html .main_index .img {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-html .main_index .img_nos {
-  width: 25vw;
-  z-index: 2;
-  position: relative;
-  border-radius: 70%;
-  top: 46px;
-}
-html .main_index .img_serv {
-  position: relative;
-  z-index: 2;
-  border-radius: 70%;
-  width: 25vw;
-  top: -145px;
-  background-color: white;
-}
-@media screen and (max-width: 450px) {
-  html .main_index .img_serv {
-    top: 0;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 960px) {
-  html .main_index .img_serv {
-    top: -95px;
-  }
-}
-html .main_index .img {
-  transition-property: all;
-  transition-duration: 2s;
-}
-html .main_index .img:hover {
-  opacity: 0.75;
-  transform: scale(1);
-}
-html .main_index .servicios {
-  position: relative;
-}
-html .main_index .img_volun {
-  width: 25vw;
-  z-index: 2;
-  position: relative;
-  border-radius: 70%;
-  top: 46px;
-}
-html .main_index .img_adopcion {
-  width: 45vw;
-  z-index: 2;
-  border-radius: 70%;
-  position: relative;
-  left: 245px;
-}
-@media screen and (max-width: 450px) {
-  html .main_index .img_adopcion {
-    top: 40px;
-    left: 25px;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 960px) {
-  html .main_index .img_adopcion {
-    left: 100px;
+    bottom: 25px;
+    -webkit-text-stroke: 0.5px black;
   }
 }
 @media screen and (max-width: 450px) {
@@ -426,7 +352,7 @@ html .main_index .caja1, html .main_index .caja2 {
     font-size: 25px;
   }
   html h4, html h5, html h6, html p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -434,7 +360,7 @@ html .main_index .caja1, html .main_index .caja2 {
     font-size: 20px;
   }
   html h4, html h5, html h6, html p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -470,7 +396,8 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.mapa, .column {
+.mapa,
+.column {
   width: 50%;
   margin-top: 6px;
   padding: 20px;
@@ -480,7 +407,23 @@ input[type=submit]:hover {
   align-items: flex-end;
   gap: 15px;
 }
+@media screen and (max-width: 450px) {
+  .contacto-c {
+    gap: 20;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  .row form {
+    width: 220%;
+  }
+  .row .mapa {
+    position: relative;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 450px) {
   .row form {
     width: 220%;
@@ -489,6 +432,24 @@ input[type=submit]:hover {
     position: relative;
     width: 100%;
   }
+}
+
+.footer-contacto .contacto-c {
+  display: none;
+}
+.footer-contacto .tel {
+  display: none;
+}
+.footer-contacto .div-fc {
+  align-items: center;
+  height: 18vh;
+}
+.footer-contacto .txt-contacto {
+  margin-top: 40px;
+}
+.footer-contacto .volver_c {
+  position: relative;
+  left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
